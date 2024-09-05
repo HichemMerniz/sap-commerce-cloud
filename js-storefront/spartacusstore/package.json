@@ -35,6 +35,7 @@
     "@spartacus/checkout": "~2211.24.1",
     "@spartacus/core": "~2211.24.1",
     "@spartacus/order": "~2211.24.1",
+    "@spartacus/pdf-invoices": "~2211.24.1",
     "@spartacus/product": "~2211.24.1",
     "@spartacus/setup": "~2211.24.1",
     "@spartacus/smartedit": "~2211.24.1",
