@@ -3,17 +3,7 @@
     "enableImageProcessingService": true,
     "extensions": [
         "cloudmediaconversion",
-        "mediaconversionbackoffice",
-        "smartedit",
-        "cmssmartedit",
-        "smarteditaddon",
-        "smarteditwebservices",
-        "cmssmarteditwebservices",
-        "oauth2",
-        "cmswebservices",
-        "permissionswebservices",
-        "previewwebservices",
-        "mediaweb"
+        "mediaconversionbackoffice"
     ],
     "storefrontAddons": [
         {
@@ -23,16 +13,6 @@
             "storefronts": [
                 "yacceleratorstorefront"
             ],
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "smarteditaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
-            "addon": "personalizationaddon",
-            "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         }
     ],
@@ -216,10 +196,6 @@
                 {
                     "key": "xyformsservices.webroot.override",
                     "value": "false"
-                },
-                {
-                    "key": "storefrontContextRoot",
-                    "value": "spartacusstore"
                 }
             ],
             "webapps": [
@@ -568,8 +544,6 @@
     ],
     "tests": {
         "extensions": [
-            "kiwi",
-            "tiger"
         ],
         "annotations": [
             "UnitTests",
