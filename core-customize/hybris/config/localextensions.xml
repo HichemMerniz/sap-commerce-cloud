@@ -251,7 +251,7 @@
 
 		<!-- DEPRECATED, DO NOT USE -->
 		<!-- only included for demos and testing -->
-		<extension name= 'yb2bacceleratorstorefront' />
+<!--		<extension name= 'yb2bacceleratorstorefront' />-->
 		<extension name= 'adaptivesearchsamplesaddon' />
 		<extension name= 'assistedservicecustomerinterestsaddon' />
 		<extension name= 'assistedservicepromotionaddon' />
