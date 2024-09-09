@@ -305,6 +305,9 @@
 		<extension name='cloudcommons' />
 		<extension name='cloudhotfolder' />
 
+		
+    	<extension name="ycommercewebservices"/>
+
 
 		<!-- Configuring Required Extensions and AddOns for SAP Commerce integration with SAP Cloud Platform Integration -->
 		<!-- https://help.sap.com/viewer/product/SAP_COMMERCE_INTEGRATIONS/latest -->
