@@ -1,14 +1,10 @@
 {
   "applications": [
     {
-      "name": "cristor",
-      "path": "cristor",
-      "ssr": {
-        "enabled": true,
-        "path": "dist/cristor/server/server.mjs"
-      },
+      "name": "react-storefront",
+      "path": "react-storefront",
       "csr": {
-        "webroot": "dist/cristor/browser/"
+        "webroot": "build/"
       }
     }
   ],
