@@ -2,7 +2,7 @@
   "applications": [
     {
       "name": "spartacusstore",
-      "path": "spartacusstore",
+      "path": "react-storefront",
       "csr": {
         "webroot": "build/"
       }
