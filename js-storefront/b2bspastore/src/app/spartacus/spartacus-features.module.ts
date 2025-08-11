@@ -110,7 +110,6 @@ import { ProductConfiguratorFeatureModule } from './features/product-configurato
   providers: [provideFeatureToggles({
     "showDeliveryOptionsTranslation": true,
     "formErrorsDescriptiveMessages": true,
-    "showSearchingCustomerByOrderInASM": true,
     "showStyleChangesInASM": true,
     "shouldHideAddToCartForUnpurchasableProducts": true,
     "useExtractedBillingAddressComponent": true,
