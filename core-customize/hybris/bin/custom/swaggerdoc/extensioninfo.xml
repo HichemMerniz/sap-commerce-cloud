@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
-    <name>swaggerdoc</name>
+    <extension name="swaggerdoc"/>
     <version>1.0.0</version>
     <description>Swagger Documentation for OCC APIs</description>
     <requires-extension name="commercewebservices"/>
