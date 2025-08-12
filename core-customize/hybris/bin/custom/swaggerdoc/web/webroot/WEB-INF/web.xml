@@ -36,6 +36,9 @@
             <url-pattern>/swagger/*</url-pattern>
             <url-pattern>/api-docs/*</url-pattern>
         </web-resource-collection>
+        <auth-constraint>
+            <!-- Empty auth-constraint allows public access -->
+        </auth-constraint>
     </security-constraint>
 
 </web-app>
