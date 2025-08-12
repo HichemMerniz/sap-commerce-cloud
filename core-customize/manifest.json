@@ -362,6 +362,22 @@
                 {
                     "key": "mockup.payment.label.billTo.phoneNumber",
                     "value": "billTo_phoneNumber"
+                },
+                {
+                    "key": "corsfilter.swaggerdoc.allowedOrigins",
+                    "value": "*"
+                },
+                {
+                    "key": "corsfilter.swaggerdoc.allowedHeaders",
+                    "value": "origin content-type accept authorization"
+                },
+                {
+                    "key": "corsfilter.swaggerdoc.allowedMethods",
+                    "value": "GET HEAD OPTIONS"
+                },
+                {
+                    "key": "corsfilter.swaggerdoc.exposedHeaders",
+                    "value": ""
                 }
             ],
             "webapps": [
@@ -416,6 +432,10 @@
                 {
                     "name": "datahubadapter",
                     "contextPath": "/datahubadapter"
+                },
+                {
+                    "name": "swaggerdoc",
+                    "contextPath": "/swaggerdoc"
                 }
             ]
         },

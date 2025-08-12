@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <display-name>Swagger Documentation</display-name>
+
+    <!-- Swagger UI Servlet -->
+    <servlet>
+        <servlet-name>SwaggerUIServlet</servlet-name>
+        <servlet-class>com.acme.swaggerdoc.servlet.SwaggerUIServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SwaggerUIServlet</servlet-name>
+        <url-pattern>/swagger/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- Swagger API Documentation Servlet -->
+    <servlet>
+        <servlet-name>SwaggerAPIServlet</servlet-name>
+        <servlet-class>com.acme.swaggerdoc.servlet.SwaggerAPIServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SwaggerAPIServlet</servlet-name>
+        <url-pattern>/api-docs/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- Security configuration - allow public access -->
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Swagger Documentation</web-resource-name>
+            <url-pattern>/swagger/*</url-pattern>
+            <url-pattern>/api-docs/*</url-pattern>
+        </web-resource-collection>
+    </security-constraint>
+
+</web-app>
