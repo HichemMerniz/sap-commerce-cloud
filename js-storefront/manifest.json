@@ -1,0 +1,20 @@
+{
+  "name": "spartacus-storefront",
+  "version": "1.0.0",
+  "description": "Spartacus Storefront for SAP Commerce Cloud",
+  "buildCommand": "npm run build:ssr",
+  "outputPath": "dist/spartacus-storefront",
+  "nodeVersion": "18",
+  "npmVersion": "8",
+  "buildArtifact": "dist/spartacus-storefront",
+  "startCommand": "npm run serve:ssr",
+  "port": 4000,
+  "environmentVariables": {
+    "NODE_ENV": "production",
+    "PORT": "4000"
+  },
+  "healthCheck": {
+    "path": "/",
+    "timeout": 30
+  }
+}
