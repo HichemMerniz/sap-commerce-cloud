@@ -1,0 +1,11 @@
+/
+/login
+/register
+/search
+/cart
+/checkout
+/my-account
+/product
+/category
+/brand
+/store-finder

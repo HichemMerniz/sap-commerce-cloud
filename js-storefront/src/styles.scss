@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@spartacus/styles/index';
+
+/* Custom global styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Spartacus theme customization */
+:root {
+  --cx-color-primary: #007cba;
+  --cx-color-secondary: #6c757d;
+  --cx-color-success: #28a745;
+  --cx-color-danger: #dc3545;
+  --cx-color-warning: #ffc107;
+  --cx-color-info: #17a2b8;
+  --cx-color-light: #f8f9fa;
+  --cx-color-dark: #343a40;
+}
