@@ -5,7 +5,17 @@
         "cloudmediaconversion",
         "mediaconversionbackoffice"
     ],
-
+    "storefrontAddons": [
+        {
+            "addons": [
+                "ordermanagementaddon"
+            ],
+            "storefronts": [
+                "yacceleratorstorefront"
+            ],
+            "template": "yacceleratorstorefront"
+        }
+    ],
     "useConfig": {
         "properties": [
             {
@@ -23,7 +33,10 @@
             {
                 "location": "hybris/config/environments/common.properties"
             },
-
+            {
+                "aspect": "accstorefront",
+                "location": "hybris/config/environments/accstorefront.properties"
+            },
             {
                 "aspect": "api",
                 "location": "hybris/config/environments/api.properties"
@@ -115,7 +128,38 @@
             "key": "session.serialization.check.response.error",
             "value": "true"
         },
-
+        {
+            "key": "website.electronics-spa.http",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
+        {
+            "key": "website.electronics-spa.https",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
+        {
+            "key": "website.apparel-uk-spa.http",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
+        {
+            "key": "website.apparel-uk-spa.https",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
+        {
+            "key": "website.apparel-de-spa.http",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
+        {
+            "key": "website.apparel-de-spa.https",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
+        {
+            "key": "website.powertools-spa.http",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
+        {
+            "key": "website.powertools-spa.https",
+            "value": "${ccv2.services.jsapps.url.0}"
+        },
         {
             "key": "b2bpunchout.order.verification.enabled",
             "value": "true"
@@ -249,6 +293,65 @@
                 {
                     "name": "merchandisingcmswebservices",
                     "contextPath": "/merchandisingcmswebservices"
+                }
+            ]
+        },
+        {
+            "name": "accstorefront",
+            "properties": [
+                {
+                    "key": "cookies.SameSite.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "cookies.SameSite",
+                    "value": "None"
+                },
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "storefrontContextRoot",
+                    "value": ""
+                },
+                {
+                    "key": "sapproductconfig.providerFactoryBeanName",
+                    "value": "sapProductConfigMockProviderFactory"
+                },
+                {
+                    "key": "xyformsservices.webroot.override",
+                    "value": "false"
+                },
+                {
+                    "key": "xss.filter.header.X-Frame-Options",
+                    "value": ""
+                }
+            ],
+            "webapps": [
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                },
+                {
+                    "name": "b2bpunchout",
+                    "contextPath": "/b2bpunchout"
+                },
+                {
+                    "name": "hac",
+                    "contextPath": "/hac"
+                },
+                {
+                    "name": "orbeonweb",
+                    "contextPath": "/web-orbeon"
+                },
+                {
+                    "name": "xyformsweb",
+                    "contextPath": "/xyformsweb"
                 }
             ]
         },
